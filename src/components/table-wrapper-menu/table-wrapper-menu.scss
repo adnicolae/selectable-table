@@ -1,0 +1,11 @@
+.table-wrapper-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+
+  &__counter-text {
+    margin-left: 15px;
+    margin-right: 50px;
+  }
+}

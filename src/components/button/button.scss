@@ -1,0 +1,21 @@
+@import "../../styles/colors";
+
+.menu-item {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &__label {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: $dove-grey;
+  }
+
+  &:disabled {
+    color: $dove-grey;
+    cursor: not-allowed;
+  }
+}

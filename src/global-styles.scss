@@ -7,4 +7,11 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   background-color: $white-smoke;
+  color: $mineshaft;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  padding: 10px;
+  cursor: pointer;
 }
