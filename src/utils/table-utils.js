@@ -1,3 +1,9 @@
+/**
+ * Updates state on user select/deselect
+ * @param {array} selectedItem
+ * @param {string} key
+ * @returns array: the new array with/without the selectedItem based on select/deselect
+ */
 export const toggleSelect =
   (selectedItem = {}, key = "") =>
   (prevState = {}) => {
@@ -13,6 +19,13 @@ export const toggleSelect =
     return [...prevState, selectedItem];
   };
 
+/**
+ * Checks if item has already been selected
+ * @param {object} item the item to check for
+ * @param {array} selectedItems
+ * @param {string} key object key to unique value/id to compare
+ * @returns boolean
+ */
 export const isSelected = ({ item, selectedItems, key }) => {
   if (!Array.isArray(selectedItems) || !key) {
     return false;
