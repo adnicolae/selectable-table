@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import Table from "./components/table/table";
+import tableColumns from "./constants/table-columns";
+import data from "./mock-data";
+import { toggleSelect } from "./utils/table-utils";
 
-function App() {
-  return <div>Hello</div>;
-}
+const selectableObjKey = "name";
+
+const App = () => {
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  const handleOnSelect = (event, item) => {
+    setSelectedItems(toggleSelect(item, selectableObjKey));
+
+    event.stopPropagation();
+  };
+
+  return (
+    <Table
+      data={data}
+      columns={tableColumns}
+      onSelect={handleOnSelect}
+      selectedItems={selectedItems}
+      selectableObjKey={selectableObjKey}
+    />
+  );
+};
 
 export default App;
