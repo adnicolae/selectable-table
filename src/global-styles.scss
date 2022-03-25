@@ -1,0 +1,10 @@
+@charset "utf-8";
+@import "styles/colors";
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  background-color: $white-smoke;
+}
