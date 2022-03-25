@@ -1,0 +1,10 @@
+@import "../../styles/colors";
+
+.green-dot {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  background-color: $digital-green;
+  display: inline-block;
+}

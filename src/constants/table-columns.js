@@ -1,3 +1,5 @@
+import statusFormatter from "../utils/table-formatters";
+
 const tableColumns = [
   {
     name: "selectable",
@@ -18,6 +20,7 @@ const tableColumns = [
   {
     name: "status",
     title: "Status",
+    formatter: statusFormatter,
   },
 ];
 

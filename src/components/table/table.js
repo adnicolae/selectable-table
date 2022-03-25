@@ -27,6 +27,8 @@ const Table = ({
             >
               {columns &&
                 columns.map((column) => {
+                  const formatter = column.formatter;
+
                   if (column.name === "selectable") {
                     return (
                       <th
@@ -42,6 +44,14 @@ const Table = ({
                           })}
                         />
                       </th>
+                    );
+                  }
+
+                  if (typeof formatter === "function") {
+                    return (
+                      <td key={`${item.name}-${column.name}__cell`}>
+                        {formatter(item[column.name])}
+                      </td>
                     );
                   }
 
