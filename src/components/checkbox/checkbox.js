@@ -14,7 +14,9 @@ const Checkbox = ({ value, ...rest }) => {
     ref.current.indeterminate = isIndeterminate(value);
   }, [value]);
 
-  return <input ref={ref} type="checkbox" {...rest} />;
+  return (
+    <input data-testid="custom-checkbox" ref={ref} type="checkbox" {...rest} />
+  );
 };
 
 Checkbox.propTypes = {
