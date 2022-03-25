@@ -45,6 +45,7 @@ const App = () => {
       <Table
         data={data}
         columns={tableColumns}
+        isSelectable={true}
         onSelect={handleOnSelect}
         selectedItems={selectedItems}
         selectableObjKey={selectableObjKey}
