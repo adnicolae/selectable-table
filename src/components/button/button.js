@@ -4,14 +4,15 @@ import PropTypes from "prop-types";
 import "./button.scss";
 
 const Button = ({ children, variant, icon: Icon, ...rest }) => {
-  const btnClassNames = classNames({ "menu-item": variant === "menu-item" });
+  const btnClassNames = classNames(
+    { btn: variant === "button" },
+    { "menu-item": variant === "menu-item" }
+  );
 
   return (
     <button className={btnClassNames} type="button" {...rest}>
-      {Icon}
-      <span className={classNames(btnClassNames, "menu-item__label")}>
-        {children}
-      </span>
+      <span className={classNames({ "menu-item__icon": Icon })}>{Icon}</span>
+      {children}
     </button>
   );
 };

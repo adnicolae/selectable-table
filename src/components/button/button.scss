@@ -6,8 +6,8 @@
   border: none;
   cursor: pointer;
 
-  &__label {
-    margin-left: 10px;
+  &__icon {
+    margin-right: 15px;
   }
 
   &:hover {
@@ -17,6 +17,31 @@
   &:disabled {
     color: $dove-grey;
     cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $dove-grey;
+  }
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+  background-color: $red;
+  color: $light-grey;
+
+  &:hover {
+    background-color: $light-red;
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: $light-red;
+    color: $white;
   }
 
   &:focus {
