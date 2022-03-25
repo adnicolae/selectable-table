@@ -1,9 +1,15 @@
 import React from "react";
 import withContext from "./with-context-row";
+import "./row.scss";
 
 const Row = ({ children, item, onSelect, ...rest }) => {
   return (
-    <tr onClick={(e) => onSelect(e, item)} {...rest}>
+    <tr
+      className="row"
+      onClick={(e) => onSelect(e, item)}
+      {...rest}
+      aria-label="Select Item"
+    >
       {children}
     </tr>
   );

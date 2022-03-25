@@ -1,4 +1,4 @@
-@import "../../styles/colors";
+@import "../../styles/_colors";
 
 .menu-item {
   font-size: 18px;
@@ -17,5 +17,10 @@
   &:disabled {
     color: $dove-grey;
     cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $dove-grey;
   }
 }

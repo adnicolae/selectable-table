@@ -1,0 +1,46 @@
+@import "./styles/_colors";
+
+.page-container {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 80%;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  text-align: left;
+  border-bottom: 1px solid $silver;
+  user-select: none;
+}
+
+/* TODO: Refactoring needed so that width is set in columns config */
+thead th:nth-child(1) {
+  width: 5%;
+}
+
+thead th:nth-child(2) {
+  width: 10%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4) {
+  width: 50%;
+}
+
+thead th:nth-child(5) {
+  width: 25%;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+}

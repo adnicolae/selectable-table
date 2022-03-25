@@ -5,6 +5,7 @@ import tableColumns from "./constants/table-columns";
 import data from "./mock-data";
 import hasScheduledItems from "./utils/has-scheduled-items";
 import { toggleSelect } from "./utils/table-utils";
+import "./App.scss";
 
 const selectableObjKey = "name";
 

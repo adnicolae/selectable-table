@@ -11,7 +11,11 @@ const Cell = ({ item, column, selected, onSelect }) => {
   if (isSelectableCell && column.name === "selectable") {
     return (
       <td>
-        <Checkbox onClick={(e) => onSelect(e, item)} checked={selected} />
+        <Checkbox
+          onClick={(e) => onSelect(e, item)}
+          checked={selected}
+          aria-label="Select Item"
+        />
       </td>
     );
   }

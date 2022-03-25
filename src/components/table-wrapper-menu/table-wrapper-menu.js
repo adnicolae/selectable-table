@@ -26,6 +26,9 @@ const TableWrapperMenu = (props) => {
         checked={isAllSelected}
         onClick={onSelectAll}
         value={checkboxValue}
+        // eslint-disable-next-line jsx-a11y/tabindex-no-positive
+        tabIndex="1"
+        aria-label="Select/Deselect All"
       />
       <p className="table-wrapper-menu__counter-text">
         Selected: {selectedItemsCounter}
@@ -35,6 +38,9 @@ const TableWrapperMenu = (props) => {
         onClick={onDownload}
         disabled={isBtnDisabled}
         icon={<FaDownload />}
+        aria-label="Download Selected"
+        // eslint-disable-next-line jsx-a11y/tabindex-no-positive
+        tabIndex="2"
       >
         Download Selected
       </Button>

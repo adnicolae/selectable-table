@@ -9,7 +9,11 @@ const BaseTable = ({ data, columns }) => {
       <thead>
         <tr>
           {columns &&
-            columns.map((column) => <th key={column.name}>{column.title}</th>)}
+            columns.map((column) => (
+              <th scope="col" key={column.name}>
+                {column.title}
+              </th>
+            ))}
         </tr>
       </thead>
       <tbody>
