@@ -18,7 +18,7 @@ const Checkbox = ({ value, ...rest }) => {
 };
 
 Checkbox.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 export default Checkbox;

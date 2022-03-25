@@ -43,7 +43,7 @@ const TableWrapperMenu = (props) => {
 };
 
 TableWrapperMenu.propTypes = {
-  selectedItemsCounter: PropTypes.string.isRequired,
+  selectedItemsCounter: PropTypes.number.isRequired,
   isAllSelected: PropTypes.bool.isRequired,
   onSelectAll: PropTypes.func.isRequired,
   onDownload: PropTypes.func.isRequired,
