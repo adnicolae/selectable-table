@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import SelectableContext from "../../context/selectable-context";
+import SelectableContext from "../context/selectable-context";
 
 const withContext = (Row) => {
   const WithContextRow = (props) => {

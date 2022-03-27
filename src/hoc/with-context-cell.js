@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import SelectableContext from "../../context/selectable-context";
-import { isSelected } from "../../utils/table-utils";
+import { isSelected } from "../utils/table-utils";
 import PropTypes from "prop-types";
+import SelectableContext from "../context/selectable-context";
 
 const withContext = (Cell) => {
   const WithContextCell = (props) => {

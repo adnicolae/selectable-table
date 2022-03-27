@@ -1,7 +1,7 @@
 import React from "react";
 import Checkbox from "../checkbox/checkbox";
-import withContext from "./with-context-cell";
 import PropTypes from "prop-types";
+import withContext from "../../hoc/with-context-cell";
 
 const Cell = ({ item, column, selected, onSelect }) => {
   const formatter = column.formatter;

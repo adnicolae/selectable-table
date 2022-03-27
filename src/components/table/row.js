@@ -1,5 +1,5 @@
 import React from "react";
-import withContext from "./with-context-row";
+import withContext from "../../hoc/with-context-row";
 import "./row.scss";
 
 const Row = ({ children, item, onSelect, ...rest }) => {
