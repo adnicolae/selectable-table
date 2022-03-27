@@ -1,6 +1,6 @@
 import statusFormatter from "../utils/table-formatters";
 
-const tableColumns = [
+const demoTableColumns = [
   {
     name: "selectable",
     title: "",
@@ -24,4 +24,4 @@ const tableColumns = [
   },
 ];
 
-export default tableColumns;
+export default demoTableColumns;

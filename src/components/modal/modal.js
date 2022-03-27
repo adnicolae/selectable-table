@@ -4,7 +4,7 @@ import "./modal.scss";
 
 const Modal = ({ title, active, handleClose, children }) => {
   const modalClassNames = active ? "modal show-modal" : "modal hide-modal";
-  console.log(title);
+
   return (
     <div className={modalClassNames}>
       <section className="modal__content">
