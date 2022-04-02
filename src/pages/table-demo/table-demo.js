@@ -50,7 +50,7 @@ const TableDemoPage = () => {
       <Table
         data={data}
         columns={demoTableColumns}
-        isSelectable={true}
+        isSelectable
         onSelect={handleOnSelect}
         selectedItems={selectedItems}
         selectableObjKey={selectableObjKey}

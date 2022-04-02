@@ -1,14 +1,16 @@
 import React from "react";
-import SelectableContext from "../../context/selectable-context";
+import SelectableContext from "./selectable-context";
 
 const SelectableTable = ({
   table: Table,
+  isSelectable,
   selectedItems,
   onSelect,
   selectableObjKey,
   ...rest
 }) => {
   const context = {
+    isSelectable,
     selectedItems,
     onSelect,
     selectableObjKey,

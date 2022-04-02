@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SelectableTable from "../components/table/selectable-table";
+import SelectableTable from "../selectable-table";
 
 const withSelectable = (Table) => {
-  const TableWrapper = ({ isSelectable, ...rest }) => {
+  const TableWrapper = (props) => {
+    const { isSelectable } = props;
+
     if (isSelectable) {
-      return <SelectableTable {...rest} table={Table} />;
+      return <SelectableTable {...props} table={Table} />;
     }
 
-    return <Table {...rest} />;
+    return <Table {...props} />;
   };
 
   TableWrapper.propTypes = {

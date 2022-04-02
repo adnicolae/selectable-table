@@ -1,14 +1,14 @@
 import React from "react";
 import Checkbox from "../checkbox/checkbox";
 import PropTypes from "prop-types";
-import withContext from "../../hoc/with-context-cell";
+import withContext from "./hoc/with-context-cell";
 
-const Cell = ({ item, column, selected, onSelect }) => {
+const Cell = ({ item, column, selected, onSelect, isSelectableTable }) => {
   const formatter = column.formatter;
-  const isSelectableCell = typeof onSelect === "function";
+  const isSelectableCell = column.name === "selectable";
   const isFormattedCell = typeof formatter === "function";
 
-  if (isSelectableCell && column.name === "selectable") {
+  if (isSelectableTable && isSelectableCell) {
     return (
       <td>
         <Checkbox
