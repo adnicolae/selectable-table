@@ -31,7 +31,9 @@ const TableWrapperMenu = (props) => {
         aria-label="Select/Deselect All"
       />
       <p className="table-wrapper-menu__counter-text">
-        Selected: {selectedItemsCounter}
+        {selectedItemsCounter > 0
+          ? `Selected: ${selectedItemsCounter}`
+          : `None Selected`}
       </p>
       <Button
         variant="menu-item"
