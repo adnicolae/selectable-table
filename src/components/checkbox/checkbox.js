@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import CHECKBOX_STATES from "../../constants/checkbox-states";
+import CHECKBOX_STATES from "./checkbox-states";
 
 const isIndeterminate = (value) => value === CHECKBOX_STATES.Indeterminate;
 

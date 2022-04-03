@@ -4,7 +4,7 @@ import data from "../../mock-data";
 import TableWrapperMenu from "../../components/table-wrapper-menu/table-wrapper-menu";
 import hasScheduledItems from "../../utils/has-scheduled-items";
 import Table from "../../components/table/table";
-import demoTableColumns from "../../constants/demo-table-columns";
+import demoTableColumns from "./demo-table-columns";
 import Modal from "../../components/modal/modal";
 import "./table-demo.scss";
 

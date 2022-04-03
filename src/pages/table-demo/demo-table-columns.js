@@ -1,4 +1,4 @@
-import statusFormatter from "../utils/table-formatters";
+import statusFormatter from "../../utils/table-formatters";
 
 const demoTableColumns = [
   {
