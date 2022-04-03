@@ -12,7 +12,7 @@ const Cell = ({ item, column, selected, onSelect, isSelectableTable }) => {
     return (
       <td>
         <Checkbox
-          onClick={(e) => onSelect(e, item)}
+          onChange={(e) => onSelect(e, item)}
           checked={selected}
           aria-label="Select Item"
         />

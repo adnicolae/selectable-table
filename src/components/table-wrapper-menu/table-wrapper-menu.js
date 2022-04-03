@@ -24,7 +24,7 @@ const TableWrapperMenu = (props) => {
     <div className="table-wrapper-menu">
       <Checkbox
         checked={isAllSelected}
-        onClick={onSelectAll}
+        onChange={onSelectAll}
         value={checkboxValue}
         // eslint-disable-next-line jsx-a11y/tabindex-no-positive
         tabIndex="1"
